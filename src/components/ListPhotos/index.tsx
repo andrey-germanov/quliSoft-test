@@ -43,7 +43,7 @@ export const ListPhotos = () => {
       })}
       <div className={s.footer}>
         <button
-          className={photoListPage === 1 ? "" : s.button}
+          className={photoListPage === 1 ? s.disabled : s.button}
           role="button"
           onClick={() => decrementPage()}
         >
